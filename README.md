@@ -1,5 +1,5 @@
-# Cloud-Tag
-Animated Cloud Tag for UniversalDashboard
+# Tag Cloud
+Animated Tag Cloud for UniversalDashboard
 
 ## Reason For This Component
 Although I am the dashboard guy at work now, I never get any clues as what to actually put on pages to make them look good.
@@ -25,7 +25,7 @@ Well I thought this looked pretty cool, but seemed a big effort to get the resul
 
 ```
 Import-Module -Name UniversalDashboard
-Import-Module -Name UniversalDashboard.UDCloudTag
+Import-Module -Name UniversalDashboard.UDTagCloud
 Get-UDDashboard | Stop-UDDashboard
 $theme = New-UDTheme -Name "Basic" -Definition @{
     'main' = @{
