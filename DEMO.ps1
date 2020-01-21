@@ -1,5 +1,5 @@
-Import-Module -Name UniversalDashboard.Community -RequiredVersion 2.8.1
-Import-Module "C:\UD\CloudTag\src\output\UniversalDashboard.UDCloudTag\UniversalDashboard.UDCloudTag.psd1"
+Import-Module -Name UniversalDashboard
+Import-Module -Name UniversalDashboard.UDCloudTag
 Get-UDDashboard | Stop-UDDashboard
 $theme = Get-UDTheme -Name Default
 Start-UDDashboard -Port 1000 -AutoReload -Dashboard (
