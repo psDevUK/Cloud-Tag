@@ -20,7 +20,7 @@ Well I thought this looked pretty cool, but seemed a big effort to get the resul
           * data
           * fontSize
           * spiral
-          
+          * timeInterval
 ## Demo
 
 ```
@@ -49,16 +49,7 @@ Start-UDDashboard -Port 1000 -AutoReload -Dashboard (
                     }
                 }
 
-                New-UDTagCloud -data { $hash } -rotate 0 -padding 7 -height "400px" -spiral 3 -colorarray @('#3772ff',
-                    '#df2935',
-                    '#fdca40',
-                    '#09e85e',
-                    '#16c172',
-                    '#172a3a',
-                    '#004346',
-                    '#fa7921',
-                    '#fe9920',
-                    '#0c4767')
+                New-UDTagCloud -data { $hash } -rotate 0 -padding 7 -height "400px" -spiral "archimedean" -timeInterval 6000 -colorarray @('#3772ff','#df2935','#fdca40','#09e85e','#16c172','#172a3a','#004346','#fa7921','#fe9920','#0c4767')
 
             }
         }
